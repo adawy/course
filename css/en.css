@@ -1,0 +1,97 @@
+body {
+    direction: ltr;
+    text-align: left;
+}
+
+ul {
+    padding-right: unset;
+    padding-left: 0;
+}
+
+header .top-header .login p:last-of-type::after {
+    right: unset;
+    left: 10px;
+}
+
+header .top-header .lang-phone .dropdown-menu {
+    left: unset !important;
+    right: 0 !important;
+}
+
+header .top-header .lang-phone .dropdown-menu::after {
+    left: unset;
+    right: 33px;
+}
+
+.about .about-content h3::after {
+    right: unset;
+    left: 0;
+}
+.login-section .form-group i{
+    left: unset;
+    right: 20px;
+}
+.up-icon i{
+    right: unset!important;
+}
+.fliter-side .sub h3::after,
+.checkmark,
+.about .about-img .over-img,
+.start-proj h2 img,
+footer .footer-widget a::after{
+    right: unset;
+    left: 0;
+}
+.main-input .uploaded-image{
+    right: 0;
+    left: unset;
+}
+.main-input{
+    padding: 0 0 0 15px;
+}
+footer .footer-widget a:hover{
+    padding-right: unset;
+    padding-left: 25px;
+}
+.message-content li.recive span{
+    left: 10px;
+    right: unset;
+}
+footer .footer-widget .contacts a:not(:last-of-type){
+    margin-right: 25px;
+    margin-left: unset;
+}
+.message-content li.send span{
+    left: unset;
+    right: 10px;
+}
+.message-content li.recive{
+    float: right;
+}
+.bg-about{
+    left: -30%;
+    right: unset;
+}
+.about .about-img .one{
+    left: 53px;
+    right: unset;
+}
+.depart-item::after{
+    left: 15px;
+    right: unset;
+}
+.about .about-img .two{
+    right: -10px;
+    transform: rotateY(180deg);
+    left: unset;
+}
+@media (max-width: 991px) {
+    header nav .nav {
+        right: unset;
+        left: -250px;
+    }
+    header nav .nav.show-nav{
+        right: unset;
+        left: 0;
+    }
+}
