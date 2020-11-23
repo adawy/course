@@ -1,4 +1,26 @@
 $(document).ready(function () {
+     // scroll nice 
+     $('nav ul li a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
+    //search
+    $('.search-btn').click(function(){
+        event.preventDefault();
+        $('.search-div').addClass('d-flex')
+    });
+    $('.close-search').click(function(){
+        $('.search-div').removeClass('d-flex')
+    });
 
     // mult-img
     $(document).on('change', '#mult-img', function (event) {
@@ -14,6 +36,7 @@ $(document).ready(function () {
     $(document).on('click', '.remove-appendedd', function () {
         $(this).parent().remove();
     });
+
     //upload images
     $(function () {
         var imagesPreview = function (input, placeToInsertImagePreview) {
@@ -31,7 +54,7 @@ $(document).ready(function () {
                         input.setAttribute('name', 'images[]');
                         input.setAttribute('type', 'hidden');
                         button.setAttribute('class', 'close');
-                        button.innerHTML = '<i class="fa fa-camera-retro"></i>';
+                        button.innerHTML = '<i class="fa fa-times"></i>';
                         body.appendChild(image);
                         body.appendChild(input);
                         body.appendChild(button);
@@ -53,6 +76,7 @@ $(document).ready(function () {
         });
     });
     //js
+    
     // Viewing the uploaded image in a file input
     $(document).on("change", ".file-input", function () {
         let input = $(this),

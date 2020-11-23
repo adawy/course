@@ -8,90 +8,98 @@ ul {
     padding-left: 0;
 }
 
-header .top-header .login p:last-of-type::after {
+header .top-header .login a i{
+    padding-inline-end: 5px;
+}
+.about-page .aboutpage-img::before{
     right: unset;
-    left: 10px;
+    left: -40px;
 }
-
-header .top-header .lang-phone .dropdown-menu {
-    left: unset !important;
-    right: 0 !important;
-}
-
-header .top-header .lang-phone .dropdown-menu::after {
+.about-page .aboutpage-img::after{
     left: unset;
-    right: 33px;
+    right: -50px;
 }
-
-.about .about-content h3::after {
-    right: unset;
+footer .footer-widget a::after{
     left: 0;
+    right: unset;
+    transform: rotate(180deg) translateY(50%);
 }
+footer .footer-widget .contacts a:not(:last-of-type){
+    margin-left: unset;
+    margin-right: 15px;
+}
+
 .login-section .form-group i{
-    left: unset;
+    left:unset;
     right: 20px;
 }
-.up-icon i{
-    right: unset!important;
-}
-.fliter-side .sub h3::after,
-.checkmark,
-.about .about-img .over-img,
-.start-proj h2 img,
-footer .footer-widget a::after{
-    right: unset;
+.img-block .close i,
+.upload-img .upload-icon i{
     left: 0;
+    right: 0;
 }
-.main-input .uploaded-image{
+.pay-bank .bank-item .img::after{
     right: 0;
     left: unset;
 }
-.main-input{
-    padding: 0 0 0 15px;
+.bank-info ul li{
+    display: flex;
 }
-footer .footer-widget a:hover{
-    padding-right: unset;
-    padding-left: 25px;
+.course-details .user-tabs .tab-pane h3.cust-title{
+    border-left: 4px solid var(--primaryColor);
+    border-right: unset;
 }
-.message-content li.recive span{
+.course-details .course-list li a p img{
+    transform: rotate(180deg);
+}
+.about h3.title-about::after{
+    right: unset;
+    left: 0;
+}
+.about h2{
+    border-left: 2px solid var(--primaryColor);
+    border-right: unset;
+}
+.about .about-img .two{
+    right: unset;
+    left: 30px;
+}
+.app-text h3{
+    border-left: 3px solid var(--primaryColor);
+    border-right: unset;
+}
+.about .circle-2{
+    right: 0;
+    left: unset;
+}
+.about .circle-1{
+    right: unset;
+    left: -30px;
+}
+header .top-header .lang-phone .user-drop .dropdown-menu{
+    text-align: left;
+}
+.pay-method .radiobtn{
     left: 10px;
     right: unset;
 }
-footer .footer-widget .contacts a:not(:last-of-type){
-    margin-right: 25px;
-    margin-left: unset;
-}
-.message-content li.send span{
-    left: unset;
-    right: 10px;
-}
-.message-content li.recive{
-    float: right;
-}
-.bg-about{
-    left: -30%;
-    right: unset;
-}
-.about .about-img .one{
-    left: 53px;
-    right: unset;
-}
-.depart-item::after{
-    left: 15px;
-    right: unset;
-}
-.about .about-img .two{
-    right: -10px;
-    transform: rotateY(180deg);
-    left: unset;
-}
-@media (max-width: 991px) {
-    header nav .nav {
-        right: unset;
+@media (max-width: 991px){
+    header nav .nav{
         left: -250px;
+        right: unset;
     }
-    header nav .nav.show-nav{
+    .about .about-img .two{
+        right: 21px;
+        left: unset;
+    }
+    header nav .nav.show-nav {
         right: unset;
         left: 0;
+    }
+}
+@media (max-width: 459px){
+    .about .about-img .two {
+        left: unset;
+        right: 0;
     }
 }
